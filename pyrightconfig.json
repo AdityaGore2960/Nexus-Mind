@@ -1,0 +1,18 @@
+{
+  "pythonVersion": "3.13",
+  "pythonPlatform": "Windows",
+  "venvPath": ".",
+  "include": ["ai/src"],
+  "pythonInterpreterPath": "C:/Users/adi10/AppData/Local/Programs/Python/Python313/python.exe",
+  "typeCheckingMode": "basic",
+  "reportMissingModuleSource": "none",
+  "reportMissingImports": false,
+  "reportMissingTypeStubs": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownVariableType": false,
+  "useLibraryCodeForTypes": true,
+  "reportPrivateImportUsage": false,
+  "reportAttributeAccessIssue": false,
+  "reportArgumentType": false,
+  "reportReturnType": false
+}
