@@ -26,10 +26,10 @@ export default function MapPage() {
   return (
     <div className="relative flex flex-col h-[calc(100vh-112px)] w-full rounded-2xl overflow-hidden border border-slate-200 shadow-2xl">
       {/* Absolute Header Overlay */}
-      <div className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center p-4 bg-gradient-to-b from-slate-950/80 to-transparent pointer-events-none">
+      <div className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center p-4 bg-gradient-to-b from-white/80 to-transparent pointer-events-none">
         <div className="pointer-events-auto">
-          <h1 className="text-2xl font-bold tracking-tight text-slate-900 drop-shadow-md flex items-center gap-2">
-            <MapIcon className="h-6 w-6 text-cyan-400" />
+          <h1 className="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+            <MapIcon className="h-6 w-6 text-cyan-600" />
             Exploration Map
           </h1>
         </div>
@@ -91,12 +91,12 @@ export default function MapPage() {
                 {/* AI Models */}
                 <div className="space-y-3">
                   <h4 className="text-xs font-semibold text-slate-600 uppercase tracking-wider">AI Inference Engine</h4>
-                  <div className="p-3 rounded-lg border border-cyan-500/30 bg-cyan-500/5">
+                  <div className="p-3 rounded-lg border border-cyan-300 bg-cyan-50">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-cyan-300">Ensemble Pipeline</span>
-                      <span className="text-xs text-cyan-500 bg-cyan-500/10 px-2 py-0.5 rounded">v2.4.1</span>
+                      <span className="text-sm font-medium text-cyan-800">Ensemble Pipeline</span>
+                      <span className="text-xs text-cyan-700 bg-cyan-100 border border-cyan-200 px-2 py-0.5 rounded">v2.4.1</span>
                     </div>
-                    <p className="text-xs text-slate-600 mb-3">Combines CNN vision with XGBoost tabular features for max accuracy.</p>
+                    <p className="text-xs text-slate-500 mb-3">Combines CNN vision with XGBoost tabular features for max accuracy.</p>
                     <Button variant="cyan" className="w-full text-xs h-8">
                       Run Inference Area
                     </Button>

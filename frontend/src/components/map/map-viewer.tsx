@@ -50,10 +50,10 @@ export default function MapViewer() {
 
     return {
       fillColor: color,
-      weight: 1,
+      weight: 2,
       opacity: 1,
-      color: "rgba(255,255,255,0.2)",
-      fillOpacity: 0.4
+      color: "rgba(15, 23, 42, 0.4)",
+      fillOpacity: 0.45
     };
   };
 
@@ -62,13 +62,13 @@ export default function MapViewer() {
       center={[35.05, -119.4]} // Default somewhere interesting
       zoom={11}
       zoomControl={false}
-      style={{ height: "100%", width: "100%", background: "#020617" }}
+      style={{ height: "100%", width: "100%", background: "#f8fafc" }}
       className="z-0"
     >
-      {/* Dark modern map tiles (CartoDB Dark Matter) */}
+      {/* Light map tiles (CartoDB Positron) */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         maxZoom={20}
       />
       
