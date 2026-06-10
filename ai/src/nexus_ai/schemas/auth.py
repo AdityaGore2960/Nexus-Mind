@@ -6,7 +6,8 @@ from __future__ import annotations
 import uuid
 from datetime import datetime
 
-from pydantic import BaseModel, EmailStr, Field, field_validator
+from pydantic import BaseModel, Field, field_validator
+from pydantic import EmailStr
 
 from nexus_ai.models.user import UserRole
 
