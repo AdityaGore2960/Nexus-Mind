@@ -10,8 +10,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY pyproject.toml /build/
 COPY src /build/src
 
-RUN pip install --no-cache-dir --prefix=/install -e ".[standard]" \
-    && pip install --no-cache-dir --prefix=/install -e /build
+RUN pip install --no-cache-dir --prefix=/install -e /build
+
+RUN pip install --no-cache-dir --prefix=/install -e /build \
+    && python -c "import email_validator; print('email-validator installed')"
 
 
 # ── Production stage ──────────────────────────────────────────────────────────
