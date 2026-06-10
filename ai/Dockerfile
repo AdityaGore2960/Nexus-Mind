@@ -4,7 +4,7 @@ FROM python:3.12-slim AS builder
 WORKDIR /build
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc libpq-dev gdal-bin libgdal-dev \
+    libpq5 gdal-bin libgdal-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY pyproject.toml /build/
@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir --prefix=/install -e ".[standard]" \
 FROM python:3.12-slim AS production
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpq5 libgdal32 \
+    libpq5 \
     && rm -rf /var/lib/apt/lists/* \
     && useradd --create-home --shell /bin/bash nexus
 
